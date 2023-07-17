@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-cover">
+        <img src="images/photo-1688248335728-3ec6d3e1950b.avif" id="form-image" alt="Form Cover Image">
+        <div id="logo">
+            <img src="images/odin-lined.png" class="odin-logo" alt="odin-logo">
+            <h1>Reglion</h1>
+        </div>
+    </div>
+
+    <div class="form-information">
+        <header class="form-header">
+            <p>This is not a real online service! You know you need something like this in your life to achieve your deepest dreams.</p>
+            <p>Sign up <i>now</i> to get started</p>
+            <p>You know what you want</p>
+        </header>
+
+        <div class="form-mid">
+            <form action="#">
+                <h3>Let's do this!</h3>
+    
+                <section class="form-details">
+                        <div class="form-details-section">
+                            <label for="first-name">first name</label>
+                            <input type="text" id="first-name" name="first-name" minlength="2" required>
+                        </div>
+    
+                        <div class="form-details-section">
+                            <label for="last-name">last name</label>
+                            <input type="text" id="last-name" name="last-name" minlength="2" required>
+                        </div>
+    
+                        <div class="form-details-section">
+                            <label for="email">email</label>
+                            <input type="email" name="emai" id="email" required>
+                        </div>
+    
+                        <div class="form-details-section">
+                            <label for="tel">phone number</label>
+                            <input type="tel" name="tel" id="tel" pattern='[0-9]{10}' title="Please enter a 10 digit number" required>
+                        </div>     
+    
+                        <div class="form-details-section">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title="Password must be at least 8 characters, must contain atleast 1 number, 1 capital letter." required>
+                        </div>   
+    
+                        <div class="form-details-section">
+                            <label for="confirm-password">confirm password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title="Password must be at least 8 characters, must contain atleast 1 number, 1 capital letter." required>
+                        </div>       
+                </section>
+        </div>
+        
+            <section class="submission-section">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
