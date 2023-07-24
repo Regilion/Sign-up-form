@@ -144,5 +144,53 @@ p span {
 }
 
 @media (max-width: 991.98px) {
-    
+    /* body {
+        width: 100vw;
+    } */
+
+    #form-image {
+        width: 100vw;
+        height: 20rem;
+        float: none;
+    }
+
+    .form-header, .form-mid, .submission-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .form-mid {
+        align-items: normal;
+        padding: 20px;
+    }
+
+    /* .form-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .form-details-section {
+        grid-template-columns: repeat(auto-fit, 1fr);
+    } */
+
+    .form-header {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .form-details {
+        grid-template: repeat(5, 1fr) / 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .form-mid {
+        height: auto;
+        align-items: center;
+    }
 }
